@@ -1,68 +1,156 @@
-"# django-ecommerce-project-amazon-clone"
-## Latest Code Please Follow this link : 
-<a href="https://github.com/hackstarsj/AmazonCloneEcommerceProjectUsingDjangoReact">Amazon Clone With Inventory Management System in React and Django</a>
+# Django eCommerce DevOps Project
 
-## Complete Playlist Tutorial Link : 
+A production-grade Django eCommerce application deployed using Docker, GitHub Actions CI/CD pipeline, AWS EC2, Nginx, and Gunicorn.
 
-<a href="https://www.youtube.com/playlist?list=PLb-NlfexLTk9_nyBt3ZlNTp5ek8CPavRE">https://www.youtube.com/playlist?list=PLb-NlfexLTk9_nyBt3ZlNTp5ek8CPavRE</a>
+---
 
-## Theme Used
-<a href="https://github.com/stisla/stisla">View</a>
+# Project Overview
 
-## Er Diagram of Project
-<img src="screenshots/er_diagram.png" style="width:100%" alt="Er Diagram"/>
+This project demonstrates a complete DevOps deployment workflow for a Django-based eCommerce application.
 
-## Added BASE TEMPLATE Page
-<img src="screenshots/base_template.PNG" style="width:100%" alt="Er Diagram"/>
+The application is containerized using Docker and deployed on an AWS EC2 instance with automated CI/CD using GitHub Actions.
 
+---
 
-## Added Admin Signin Page
-<img src="screenshots/admin_signin.PNG" style="width:100%" alt="Er Diagram"/>
+# Features
 
-## Added Admin Category List Page
-<img src="screenshots/category_list.PNG" style="width:100%" alt="category"/>
+- Django eCommerce Application
+- Docker Containerization
+- GitHub Actions CI/CD Pipeline
+- AWS EC2 Deployment
+- Nginx Reverse Proxy
+- Gunicorn WSGI Server
+- Automated Deployment Workflow
+- Linux Server Configuration
+- Production Deployment Setup
 
-## Added Admin Category Create Page
-<img src="screenshots/category_create.PNG" style="width:100%" alt="category"/>
+---
 
-## Added Admin Category Update Page
-<img src="screenshots/category_update.PNG" style="width:100%" alt="category"/>
+# Tech Stack
 
-## Added Admin Sub Category List Page
-<img src="screenshots/sub_category_list.PNG" style="width:100%" alt="category"/>
+| Technology | Purpose |
+|---|---|
+| Django | Backend Web Framework |
+| Docker | Containerization |
+| GitHub Actions | CI/CD Automation |
+| AWS EC2 | Cloud Hosting |
+| Nginx | Reverse Proxy |
+| Gunicorn | Application Server |
+| Linux | Server Environment |
+| Git & GitHub | Version Control |
 
-## Added Admin Sub Category Create Page
-<img src="screenshots/sub_category_create.PNG" style="width:100%" alt="category"/>
+---
 
-## Added Admin Sub Category Update Page
-<img src="screenshots/category_update.PNG" style="width:100%" alt="category"/>
+# System Architecture
 
-## Added Admin Merchant Update Page
-<img src="screenshots/merchant_update.PNG" style="width:100%" alt="category"/>
+```text
+Developer Pushes Code
+        ↓
+GitHub Repository
+        ↓
+GitHub Actions CI/CD
+        ↓
+Docker Image Build
+        ↓
+Docker Hub
+        ↓
+AWS EC2 Server
+        ↓
+Docker Container
+        ↓
+Nginx Reverse Proxy
+        ↓
+Live Django Application
+```
 
-## Added Admin Merchant Create Page
-<img src="screenshots/merchant_create.PNG" style="width:100%" alt="category"/>
+---
 
-## Added Admin Merchant List Page
-<img src="screenshots/merchant_list.PNG" style="width:100%" alt="category"/>
+# Local Setup
 
-## Added Searching Sorting and Pagination Features
-<img src="screenshots/category_searching.PNG" style="width:100%" alt="category"/>
+## Clone Repository
 
-## Added Add Product Page With Dynamic Content and Media
-<img src="screenshots/product_create.png" style="width:100%" alt="category"/>
+```bash
+git clone https://github.com/YOUR_USERNAME/django-ecommerce-devops.git
+```
 
-## Added Product List Page
-<img src="screenshots/product_list.png" style="width:100%" alt="Products"/>
+## Create Virtual Environment
 
-## Added Product Edit Page
-<img src="screenshots/product_edit.png" style="width:100%" alt="Products"/>
+```bash
+python -m venv venv
+```
 
-## Added Product Add Media Page
-<img src="screenshots/product_add_media.png" style="width:100%" alt="Products"/>
+## Activate Environment
 
-## Added Product Edit Media Page
-<img src="screenshots/product_edit_media.png" style="width:100%" alt="Products"/>
+### Windows
 
-## Added Product Add Stock Page
-<img src="screenshots/product_add_stock.png" style="width:100%" alt="Products"/>
+```bash
+venv\Scripts\activate
+```
+
+### Linux/Mac
+
+```bash
+source venv/bin/activate
+```
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Run Application
+
+```bash
+python manage.py runserver
+```
+
+---
+
+# Docker Setup
+
+## Build Docker Image
+
+```bash
+docker build -t django-ecommerce-devops .
+```
+
+## Run Docker Container
+
+```bash
+docker run -p 8000:8000 django-ecommerce-devops
+```
+
+---
+
+# CI/CD Pipeline Workflow
+
+1. Developer pushes code to GitHub
+2. GitHub Actions pipeline triggers automatically
+3. Docker image is built
+4. Docker image is pushed to Docker Hub
+5. AWS EC2 server pulls latest image
+6. Existing container is replaced
+7. Updated application goes live
+
+---
+
+# AWS Deployment
+
+The application is deployed on an AWS EC2 Ubuntu instance using Docker containers and Nginx reverse proxy configuration.
+
+---
+
+# Future Enhancements
+
+- HTTPS with SSL
+- PostgreSQL Integration
+- Kubernetes Deployment
+- Terraform Infrastructure Automation
+- Monitoring with Prometheus & Grafana
+
+---
+
+# Author
+
+Sushma Janaki
