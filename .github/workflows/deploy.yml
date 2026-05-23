@@ -26,4 +26,4 @@ jobs:
 
       - name: Push Docker Image
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/django-ecommerce-devops:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/django-ecommerce-devops:latest .
